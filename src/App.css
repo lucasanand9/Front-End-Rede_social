@@ -1,12 +1,14 @@
 body{
-  background-color: #e4e4e4;
+  background-image: linear-gradient(to bottom right, #3423ea, #971eac);
+  height: 100vh;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 form{
-  margin-top: 20%;
+  margin-top: 8%;
   height: 60vh;
   width: 50vw;
   background-color: #d8d8d8;
@@ -21,11 +23,12 @@ form{
 
 .titulo{
   /* background-color: red; */
-  height: 10vh;
-  width: 50vw;
- text-align: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 .input-email{
   /* background-color: aqua; */
@@ -74,6 +77,11 @@ form{
   width: 15vw;
   height: 5vh;
 
+}
+
+img{
+  height: 100px;
+  width: auto;
 }
 
 

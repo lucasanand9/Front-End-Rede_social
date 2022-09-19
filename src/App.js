@@ -4,17 +4,18 @@ import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
+import Logo from './img/capi-login.svg';
+
 
 
 function App() {
 
   return (
-    
+    // Lucas: esqueci a senha
+    // Santos: Registrar
+    // Lembrar de usar o Material UI 
   <div>
-    <div className='Capi'>
-{/* mostrar assim pro grupe e depois colocar alguma coisa parecida com o instagram */}
-
-    </div>
+ 
 <form autocomplete="off">
     <Box  
     display='flex'
@@ -23,7 +24,9 @@ function App() {
     
     >
         <div className='titulo'>
-        <Typography variant="h3">Login</Typography>
+        <img src={Logo}/>
+        {/* <Typography variant="h3">Login</Typography> */}
+        
         </div>
         <hr></hr>
         <div className='input-email'>
