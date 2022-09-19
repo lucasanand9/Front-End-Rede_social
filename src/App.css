@@ -1,38 +1,79 @@
-.App {
+body{
+  background-color: #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  margin-top: 20%;
+  height: 60vh;
+  width: 50vw;
+  background-color: #d8d8d8;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+
+
+.titulo{
+  /* background-color: red; */
+  height: 10vh;
+  width: 50vw;
+ text-align: center;
+
+}
+
+.input-email{
+  /* background-color: aqua; */
+  height: 10vh;
+  width: 50vw;
+  text-align: center;
+  
+}
+
+.input-senha{
+  /* background-color: purple; */
+  height: 10vh;
+  width: 50vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.botao{
+  /* background-color: black; */
+  height: 8vh;
+  width: 50vw;
+  text-align: center;
+  
+}
+.rodape{
+  /* background-color: blue; */
+  height: 8vh;
+  width: 50vw;
+  text-align: center;
+}
+.rodape a{
+  color: rgb(15, 15, 15);
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rodape a:hover{
+  color: blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#Email{
+  width: 25vw;
+}
+#Senha{
+  width: 25vw;
+}
+#Login{
+  width: 15vw;
+  height: 5vh;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
