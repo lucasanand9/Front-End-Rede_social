@@ -1,25 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './Index.css';
 import reportWebVitals from './reportWebVitals';
-import './App.css';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { Typography } from '@mui/material';
 import Logo from './img/capi-login.svg';
-import { Link, Route, Outlet } from 'react-router-dom';
-import Registrar from'./Registrar.js';
+import {Link} from "react-router-dom";
 
 
-import { BrowserRouter, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
-    // Lucas: esqueci a senha
-    // Santos: Registrar
-    // Lembrar de usar o Material UI 
+   
   <div>
  
 <form autocomplete="off">
@@ -45,16 +38,13 @@ root.render(
             <Button>Esqueci a Senha</Button>
         </div>
         <div className='rodape'>
-             <p>Caso não tenha uma conta,<Link to=''> registre-se </Link></p> 
-           
+{/* descobrir o erro que causa quando eu tento ultilizar o link e por que todos os componentes da tela somem */}
+              <p>Caso não tenha uma conta, <Link to='/registrar'> registre-se </Link> </p> 
+             
         </div>
     </Box>
 </form>
-<BrowserRouter>
-      <Routes>
-        <Route path='/registrar' element={<Registrar />}/>
-      </Routes> 
-      </BrowserRouter>
+
 </div>
  
   );
