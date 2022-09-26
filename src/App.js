@@ -5,6 +5,11 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
 import Logo from './img/capi-login.svg';
+import { Link, Route } from 'react-router-dom';
+import Registrar from'./Registrar.js';
+
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes } from "react-router-dom";
 
 
 
@@ -25,7 +30,6 @@ function App() {
     >
         <div className='titulo'>
         <img src={Logo}/>
-        {/* <Typography variant="h3">Login</Typography> */}
         
         </div>
         <hr></hr>
@@ -40,12 +44,14 @@ function App() {
             <Button>Esqueci a Senha</Button>
         </div>
         <div className='rodape'>
-           <p>Caso não tenha uma conta <a href="">registre-se</a></p>
+            {/* <p>Caso não tenha uma conta, <Link to="/registrar">registre-se</Link></p>  */}
+           {/* <Route path="registrar" element={<Registrar />} />  */}
         </div>
     </Box>
 </form>
+  
 </div>
-    
+ 
   );
 }
 
