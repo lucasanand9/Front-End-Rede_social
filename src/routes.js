@@ -1,0 +1,17 @@
+
+import { Route, Routes as RoutesDom } from "react-router-dom"
+
+import Login from './Pages/Login'
+import Registrar from './Pages/Registrar'
+// import Index from '../src/index'
+ 
+const Routes = () => {
+    return (
+        <RoutesDom>
+            <Route path="/login" element={<Login />} />
+            <Route path="/registrar" element={<Registrar />} />
+        </RoutesDom>
+    )
+  }
+  
+  export default Routes

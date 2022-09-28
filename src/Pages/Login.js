@@ -4,13 +4,15 @@ import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Logo from '../img/capi-login.svg';
-import {Link} from "react-router-dom";
+import {NavLink } from "react-router-dom";
+
+import Routes from '../routes';
 
 function login() {
 
     return(
         <div>
- 
+            <Routes />
         <form autocomplete="off">
             <Box  
             display='flex'
@@ -35,7 +37,7 @@ function login() {
                 </div>
                 <div className='rodape'>
         {/* descobrir o erro que causa quando eu tento ultilizar o link e por que todos os componentes da tela somem */}
-                      <p>Caso não tenha uma conta, registre-se</p> 
+                      <p>Caso não tenha uma conta, <NavLink to='/registrar'>registre-se</NavLink></p> 
                      
                 </div>
             </Box>
