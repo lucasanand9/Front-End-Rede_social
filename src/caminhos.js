@@ -3,7 +3,8 @@ import React from 'react';
 import {  BrowserRouter as Router, Routers, Route} from "react-router-dom";
 
 import Index from './index';
-import Registrar from './Registrar';
+import Registrar from './Pages/Registrar';
+import Login from './Pages/Login'
 
 
 function caminhos() {
@@ -12,7 +13,7 @@ return(
     //rotas
 <Router>
     <Routers>
-        <Route path='/' element={<Index />}/>
+        <Route path='/login' element={<Login />}/>
         <Route path='/registrar' element={<Registrar />}/>
     </Routers>
 </Router>
