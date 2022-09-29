@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body{
     background-image: linear-gradient(to bottom right, #3423ea, #971eac);
     height: 100vh;
@@ -19,7 +21,9 @@ body{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
   }
   
-  
+  h3{
+    font-family: 'Open Sans', sans-serif;
+  }
   
   .titulo{
     /* background-color: red; */
@@ -44,6 +48,12 @@ body{
     width: 50vw;
     text-align: center;
   }
+
+  .input-usuario{
+    height: 10vh;
+    width: 50vw;
+    text-align: center;
+  }
   
   .botao{
     /* background-color: black; */
@@ -60,8 +70,9 @@ body{
   }
   .rodape a{
     color: rgb(15, 15, 15);
-    
   }
+
+  
   
   .rodape a:hover{
     color: blue;
@@ -76,7 +87,13 @@ body{
   #Login{
     width: 15vw;
     height: 5vh;
-  
+  }
+  #Usuario{
+    width: 25vw;
+  }
+
+  #pagina-cadastro{
+    height: 70vh;
   }
   
   img{

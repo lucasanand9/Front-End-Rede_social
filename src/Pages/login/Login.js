@@ -3,10 +3,10 @@ import './login.css';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Logo from '../img/capi-login.svg';
-import {NavLink } from "react-router-dom";
+import Titulo from '../../img/capi-login.svg';
+import {Link} from "react-router-dom";
 
-import Routes from '../routes';
+import Routes from '../../routes';
 
 function login() {
 
@@ -21,7 +21,7 @@ function login() {
             
             >
                 <div className='titulo'>
-                <img src={Logo}/>
+                <img src={Titulo}/>
                 
                 </div>
                 <hr></hr>
@@ -36,8 +36,7 @@ function login() {
                     <Button>Esqueci a Senha</Button>
                 </div>
                 <div className='rodape'>
-        {/* descobrir o erro que causa quando eu tento ultilizar o link e por que todos os componentes da tela somem */}
-                      <p>Caso não tenha uma conta, <NavLink to='/registrar'>registre-se</NavLink></p> 
+                      <p>Caso não tenha uma conta, <Link to='/registrar'>registre-se</Link></p> 
                      
                 </div>
             </Box>

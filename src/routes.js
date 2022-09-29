@@ -1,8 +1,8 @@
 
 import { Route, Routes as RoutesDom } from "react-router-dom"
 
-import Login from './Pages/Login'
-import Registrar from './Pages/Registrar'
+import Login from './Pages/login/Login'
+import Registrar from './Pages/registrar/Registrar'
 // import Index from '../src/index'
  
 const Routes = () => {
