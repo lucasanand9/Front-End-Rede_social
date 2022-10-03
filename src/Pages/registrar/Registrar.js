@@ -38,8 +38,7 @@ function Registrar() {
                 <TextField id="Senha"label="Senha" variant='outlined' type={'password'}/>
             </div>
             <div className='botao'>
-                <Button variant="contained" id="Login">Login</Button>
-                <Button>Esqueci a Senha</Button>
+                <Button variant="contained" id="Registrar">Registrar</Button>
             </div>
             <div className='rodape'>
                   <p>Caso ja tenh uma conta, realize o <NavLink to='/login'>Login</NavLink></p> 

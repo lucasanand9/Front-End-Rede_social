@@ -8,6 +8,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
+   
   }
   
   form{
@@ -88,6 +89,10 @@ body{
     width: 15vw;
     height: 5vh;
   }
+  #Registrar{
+    width: 15vw;
+    height: 5vh;
+  }
   #Usuario{
     width: 25vw;
   }
@@ -100,6 +105,21 @@ body{
     height: 100px;
     width: auto;
   }
+
+  .Modal-senha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #d8d8d860; 
+  }
   
-  
-  
+  .recuperar-senha-form{
+    width: 50vw;
+    height: 50vh;
+    border-radius: 30px;
+  }
+  .close{
+    
+  }
