@@ -112,14 +112,50 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #d8d8d860; 
+    /* background-color: #d8d8d800;  */
   }
   
   .recuperar-senha-form{
-    width: 50vw;
+    display: block;
+    /* align-items: center;
+    justify-content: center; */
+    width: 25vw;
     height: 50vh;
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .close{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
   }
+  
+  .close:hover{
+    cursor: pointer;
+    background-color: #d1d1d1;
+  }
+
+
+  .modal-cima{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    height: 25%;
+    width: 25vw;
+  }
+  .modal-cima .texto{
+    margin-left: 15%;
+  }
+  .modal-meio{
+    height: 50%;
+    width: 25vw;
+    text-align: center;
+  }
+  .modal-baixo{
+    height: 25%;
+    width: 25vw;
+  }
+    
+  

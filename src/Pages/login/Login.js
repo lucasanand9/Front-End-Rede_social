@@ -45,7 +45,10 @@ function Login() {
                         <div className="Modal-senha">
 
                             <form className="recuperar-senha-form">
-                                <span className="close"><CloseIcon onClick={handleClose}/></span>
+                                <div className="modal-cima"> <span className="texto"><h2>Esqueceu a sua senha?</h2></span> <span className="close" onClick={handleClose}><CloseIcon /></span></div>
+                                <div className="modal-meio"> <TextField variant="outlined" label="email" id='Email-senha'/> </div>
+                                <div className="modal-baixo"></div>
+                                
                             </form>
                             
                         </div>
