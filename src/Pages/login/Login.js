@@ -45,10 +45,11 @@ function Login() {
                         <div className="Modal-senha">
 
                             <form className="recuperar-senha-form">
-                                <div className="modal-cima"> <span className="texto"><h2>Esqueceu a sua senha?</h2></span> <span className="close" onClick={handleClose}><CloseIcon /></span></div>
-                                <div className="modal-meio"> <TextField variant="outlined" label="email" id='Email-senha'/> </div>
-                                <div className="modal-baixo"></div>
-                                
+                                <div className="modal-cima"> <span className="texto"></span><h2>Esqueceu a sua senha?</h2> 
+                                <span className="close" onClick={handleClose}><CloseIcon /></span></div>
+                                <span className="texto2"><p>Informe seu Email que enviaremos um link</p></span>
+                                <div className="modal-meio"> <TextField variant="outlined" label="Email" id='Email-senha'/> </div>
+                                <div className="modal-baixo"><Button variant='contained'>Enviar Email</Button></div>
                             </form>
                             
                         </div>

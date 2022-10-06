@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 
 body{
     background-image: linear-gradient(to bottom right, #3423ea, #971eac);
@@ -8,7 +8,6 @@ body{
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
-   
   }
   
   form{
@@ -120,7 +119,7 @@ body{
     /* align-items: center;
     justify-content: center; */
     width: 25vw;
-    height: 50vh;
+    height: 34vh;
     border-radius: 20px;
   }
   .close{
@@ -142,20 +141,35 @@ body{
     display: flex;
     align-items: top;
     justify-content: space-between;
-    height: 25%;
+    height: 15%;
     width: 25vw;
   }
   .modal-cima .texto{
     margin-left: 15%;
+ 
   }
+ 
   .modal-meio{
-    height: 50%;
+    height: 30%;
     width: 25vw;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .modal-baixo{
     height: 25%;
     width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
     
-  
+  .texto{
+    margin-left: 50%;
+  }
+  .texto2{
+    width: 23vw;
+    text-align: center;
+    font-size: 1rem;
+  }
