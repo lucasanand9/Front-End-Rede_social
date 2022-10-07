@@ -7,6 +7,7 @@ import Routes from '../../routes';
 import '../login/login.css';
 import Typography from '@mui/material/Typography';
 import Cadastrar from "../../img/casdastrar.svg"
+import postRegistrarUsuario from './postRegistrarUsuario'
 
 
 function Registrar() {
@@ -38,7 +39,7 @@ function Registrar() {
                 <TextField id="Senha"label="Senha" variant='outlined' type={'password'}/>
             </div>
             <div className='botao'>
-                <Button variant="contained" id="Registrar">Registrar</Button>
+                <Button onClick={() => postRegistrarUsuario()} variant="contained" id="Registrar">Registrar</Button>
             </div>
             <div className='rodape'>
                   <p>Caso ja tenh uma conta, realize o <NavLink to='/login'>Login</NavLink></p> 

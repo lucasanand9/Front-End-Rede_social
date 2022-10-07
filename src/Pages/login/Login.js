@@ -8,6 +8,7 @@ import {Link} from "react-router-dom";
 import Modal from '@mui/material/Modal';
 import Routes from '../../routes';
 import CloseIcon from '@mui/icons-material/Close';
+import postLoginUsuario from './postLoginUsuario';
 
 function Login() {
     const [open, setOpen] = React.useState(false);
@@ -35,7 +36,7 @@ function Login() {
                     <TextField id="Senha"label="Senha" variant='outlined' type={'password'}/>
                 </div>
                 <div className='botao'>
-                    <Button variant="contained" id="Login">Login</Button>
+                    <Button onClick={() => postLoginUsuario()} variant="contained" id="Login">Login</Button>
                     <Button onClick={handleOpen}>Esqueci a Senha</Button>
                     <Modal 
                     open={open}
