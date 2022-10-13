@@ -1,15 +1,21 @@
 import * as React from 'react';
 import './feed.css'
 import NavBar from './navbar'
+import Container from '@mui/material/Container';
 
 
-function feed(){
+
+function Feed(){
     return(
+        <div>
+            <NavBar/>
         <div className="body">
-           <div
-           ><NavBar/></div> 
+           <Container>
+               
+           </Container>
+        </div>
         </div>
     );
 }
 
-export default feed
+export default Feed

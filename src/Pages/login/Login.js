@@ -28,7 +28,7 @@ function Login() {
                 <img src={Titulo}/>
                 
                 </div>
-                <hr></hr>
+                
                 <div className='input-email'>
                     <TextField id="Email" label="Email" variant="outlined" autocomplete = "off"/>
                 </div>

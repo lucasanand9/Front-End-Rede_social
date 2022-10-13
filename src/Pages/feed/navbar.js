@@ -11,7 +11,6 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import Logo from '../../img/Logo.svg'
 
 const pages = ['Products', 'Pricing', 'Blog'];
@@ -37,10 +36,10 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" className="navbar">
+    <AppBar position="static" className="navbar" sx={{background: '#971eac' }}>
       <Container maxWidth="xl" className="navbar">
         <Toolbar disableGutters>
-       <a href="#"> <img src={Logo}/> </a>
+       <a href="#"> <img className="logo-feed" src={Logo}/> </a>
           
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

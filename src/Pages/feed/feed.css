@@ -1,17 +1,29 @@
-*{
+ *{
     margin: 0;
     padding: 0;
+    
 }
 
 .body{
-    height: 100vh;
+    height: 92vh;
     width: 100vw;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
+    overflow-y: auto;
+    
 }
-img{
+ .logo-feed{
     height:50px;
      width:50px;
-}
+} 
 .navbar{
     background-color: #971eac;
+} 
+.css-4eddfg-MuiPaper-root-MuiAppBar-root {
+    background-color: #971eac;
+}
+
+
+
+.postagem-card{
+    
 }
