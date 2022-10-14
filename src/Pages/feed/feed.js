@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './feed.css'
+import CardPostagem from '../postagem/Postagem'
 import NavBar from './navbar'
 import Container from '@mui/material/Container';
 
@@ -10,7 +11,9 @@ function Feed(){
         <div>
             <NavBar/>
         <div className="body">
-           <Container>
+           <Container >
+               
+                    <CardPostagem/>
                
            </Container>
         </div>

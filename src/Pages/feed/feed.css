@@ -23,7 +23,30 @@
 }
 
 
+.topo-postagem{
+    height: 10vh;
+    width: auto;
+    background-color: aqua;
+}
 
 .postagem-card{
-    
+    width: 25vw;
+    height: 70vh;
+    background-color: #1a151b;
+    display:block;
+    width:50%;
+    margin:0 auto 0 auto;
+}
+
+.postagem-img{
+    width: 25vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-postagem{
+    width: auto;
+    height: 10vh;
+    background-color: blueviolet;
 }
