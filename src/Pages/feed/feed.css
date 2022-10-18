@@ -24,9 +24,29 @@
 
 
 .topo-postagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 10vh;
     width: auto;
     background-color: aqua;
+}
+.Avatar{     
+    align-items: center;
+    justify-content: start;
+    width: 25%;
+    margin-left: 5px;
+}
+.inutil{
+    width: 25%;
+}
+
+.Nome-do-perfil{
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 50%;
+   margin-right: 5px;
 }
 
 .postagem-card{
@@ -37,16 +57,21 @@
     width:50%;
     margin:0 auto 0 auto;
 }
-
+.conteudo-postagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .postagem-img{
     width: 25vw;
     height: 50vh;
-    margin-left: auto;
-    margin-right: auto;
+   
+    margin:0 auto 0 auto;
 }
 
 .footer-postagem{
     width: auto;
-    height: 10vh;
+    height: 12vh;
     background-color: blueviolet;
+    color: azure;
 }
