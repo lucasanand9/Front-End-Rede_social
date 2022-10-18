@@ -3,7 +3,7 @@ function postLoginUsuario(){
     let campoEmail = document.getElementById("Email").value
     let campoSenha = document.getElementById("Senha").value
 
-    fetch('https://jsonplaceholder.typicode.com/posts', {
+    fetch('https://localhost:8080/login', {
         method: 'POST',
         body: JSON.stringify({
         email: campoEmail,

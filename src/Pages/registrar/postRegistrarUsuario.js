@@ -1,10 +1,10 @@
 function postRegistrarUsuario(){
 
-    let campoUsuario = document.getElementById("Usuario").Value
-    let campoEmail = document.getElementById("Email").Value
-    let campoSenha = document.getElementById("Senha").Value
+    let campoUsuario = document.getElementById("Usuario").value
+    let campoEmail = document.getElementById("Email").value
+    let campoSenha = document.getElementById("Senha").value
 
-    fetch('', {
+    fetch('http://localhost:8080/novoCadastro', {
         method: 'POST',
         body: JSON.stringify({
             usuario: campoUsuario,
