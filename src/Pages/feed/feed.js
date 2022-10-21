@@ -14,6 +14,11 @@ function Feed(){
            <Container >
                
                     <CardPostagem/>
+                    <CardPostagem/>
+                    <CardPostagem/>
+                    <CardPostagem/>
+                    <CardPostagem/>
+                    
                
            </Container>
         </div>
