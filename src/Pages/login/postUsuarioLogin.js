@@ -1,22 +1,23 @@
-function postRegistrarUsuario(){
+function postUsuarioLogin(){
 
-    let campoUsuario = document.getElementById("Usuario").value
     let campoEmail = document.getElementById("Email").value
     let campoSenha = document.getElementById("Senha").value
 
-    fetch('http://localhost:8080/novoCadastro', {
+    fetch('http://localhost:8080/loginUsuario', {
         method: 'POST',
         body: JSON.stringify({
-            usuario: campoUsuario,
             email: campoEmail,
             senha: campoSenha,
         }),
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
-    },
-})
-.then((response) => response.json())
-.then((json) => console.log(json));
+        },
+    })
+
+    .then((response) => 
+        response.json[0]["token"][0]
+    )
+
 }
 
-export default postRegistrarUsuario;
+export default postUsuarioLogin;
