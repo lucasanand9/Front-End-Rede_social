@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-function getPostagem(){
+function getPostagens(){
     return axios.get('https://jsonplaceholder.typicode.com/todos/1', {
         method: 'GET'
     })
@@ -12,4 +12,4 @@ function getPostagem(){
     })
 }
 
-export default getUsuario;
+export default getPostagens;

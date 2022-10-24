@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 import Modal from '@mui/material/Modal';
 import Routes from '../../routes';
 import CloseIcon from '@mui/icons-material/Close';
-import postLoginUsuario from './postLoginUsuario';
+import postUsuarioLogin from './postUsuarioLogin';
 
 function Login() {
     const [open, setOpen] = React.useState(false);
@@ -17,7 +17,7 @@ function Login() {
     return(
         <div>
             <Routes />
-        <form autocomplete="off">
+        
             <Box  
             display='flex'
             flexDirection={'column'}
@@ -30,13 +30,13 @@ function Login() {
                 </div>
                 
                 <div className='input-email'>
-                    <TextField id="Email" label="Email" variant="outlined" autocomplete = "off"/>
+                    <TextField name="username" id="Email" label="Email" variant="outlined" autocomplete = "off"/>
                 </div>
                 <div className='input-senha'>
-                    <TextField id="Senha"label="Senha" variant='outlined' type={'password'}/>
+                    <TextField name="password" id="Senha"label="Senha" variant='outlined' type={'password'}/>
                 </div>
                 <div className='botao'>
-                    <Button onClick={() => postLoginUsuario()} variant="contained" id="Login">Login</Button>
+                    <Button onClick={() => postUsuarioLogin()} type={'submit'} variant="contained" id="Login">Login</Button>
                     <Button onClick={handleOpen}>Esqueci a Senha</Button>
                     <Modal 
                     open={open}
@@ -61,7 +61,7 @@ function Login() {
                      
                 </div>
             </Box>
-        </form>
+        
         
         </div>
     );
