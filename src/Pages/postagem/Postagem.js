@@ -2,14 +2,14 @@ import * as React from 'react';
 import PlaceholderImg from '../../img/placeholder-postagem.svg'
 import Avatar from '@mui/material/Avatar';
 
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import HeartBrokenIcon from '@mui/icons-material/HeartBroken';
+import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
 
 import { deepOrange } from '@mui/material/colors';
-import Typography from '@mui/material/Typography';
-import zIndex from '@mui/material/styles/zIndex';
+
+
 
 function Postagem(){
 
@@ -26,27 +26,20 @@ function Postagem(){
             <div className="conteudo-postagem">
                 <img className="postagem-img" src={PlaceholderImg}/>
             </div>
-            
-              
-               
-
-                <Accordion sx={{background: '#b6b4b6', zIndex:99, }}>
-                    <AccordionSummary
-                      expandIcon={<ExpandMoreIcon />}
-                      aria-controls="panel1a-content"
-                      id="panel1a-header"
-                    >
-                      <Typography>Legenda</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
-                    
-                </div>
+            <div className="footer-postagem">
+              <div className="CurtirComentar">
+                <div className="curtir"><FavoriteBorderIcon/></div>
+                <div className="comentario"><SpeakerNotesIcon/></div>
+                <div className="vazio-postagem"></div>
+              </div>
+              <div className="LegendaLermais">
+                <div className="legenda">ler legenda...</div>
+                <div className="vazio-postagem"></div>
+ 
+              </div>
+                      
+              </div>
+            </div>
            
         
 

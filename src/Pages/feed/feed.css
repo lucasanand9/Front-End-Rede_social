@@ -51,7 +51,7 @@
 
 .postagem-card{
     width: 25vw;
-    height: 65vh;
+    height: 70vh;
     background-color: #b6b4b6;
     display:block;
     width:50%;
@@ -72,8 +72,21 @@
 }
 
 .footer-postagem{
-    width: auto;
-    height: 12vh;
-    /* background-color: blueviolet; */
-    /* color: azure; */
+    display: block;
+    height: 10vh;
+}
+.CurtirComentar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.vazio-postagem{
+    width: 75%;
+}
+.LegendaLermais{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
